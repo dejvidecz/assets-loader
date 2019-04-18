@@ -124,7 +124,7 @@ class CssUrlsFilter extends FilesFilter
             // Create route for specific file
             $presenter = $this->getPresenter();
 
-            $path = $presenter !== NULL ? $presenter->link(':IPub:AssetsLoader:files', ['id' => $fileHash]) : NULL;
+            $path = $presenter !== NULL ? $presenter->link('//:IPub:AssetsLoader:files', ['id' => $fileHash]) : NULL;
         }
 
         return $path;
