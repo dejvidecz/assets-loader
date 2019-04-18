@@ -95,7 +95,7 @@ class AssetsLoaderPresenter implements Application\IPresenter
 	 */
 	public function actionFiles($id)
 	{
-		if (($item = $this->fileCache->getItem(Utils\Strings::webalize($id))) === NULL) {
+		if (($item = $this->fileCache->getItem(Utils\Strings::webalize($id,'.'))) === NULL) {
 			return new Application\Responses\TextResponse('');
 		}
 
