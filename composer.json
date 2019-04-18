@@ -1,5 +1,5 @@
 {
-	"name"			: "ipub/assets-loader",
+	"name"			: "dejvidecz/assets-loader",
 	"type"			: "library",
 	"description"	: "Extension for loading static CSS and JS files for Nette Framework",
 	"keywords"		: ["nette", "assets", "css", "js", "javascript", "tools"],

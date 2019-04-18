@@ -98,7 +98,7 @@ class CssLoader extends AssetsLoader
 			->appendAttribute('rel', 'stylesheet' . ($this->isAlternate() ? ' alternate' : ''))
 			->appendAttribute('type', $this->contentType)
 			->appendAttribute('title', $this->title)
-			->appendAttribute('media', !trim($media) ? 'all' : $media)
+			->appendAttribute('media', !trim((string)$media) ? 'all' : $media)
 			->href($source);
 	}
 
